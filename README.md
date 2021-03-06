@@ -15,6 +15,8 @@ Images are uploaded to IPFS with the reference stored in a smart contract deploy
 ## Client App
 Built using React.js.
 
+## Screenshot
+<img src="https://i.imgur.com/mX6w538.png">
 
 ## How to Use
 
