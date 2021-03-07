@@ -105,7 +105,12 @@ class App extends Component {
         <h1>Your Image</h1>
         <p>This image is stored on IPFS & Ethereum blockchain!</p>
         <img src={`https://ipfs.io/ipfs/${this.state.ipfsHash}`} alt="" />
-        <h2>Upload Image</h2>
+
+        {this.state.ipfsHash?<div style={{background:'#90EE908F',padding:10}}> <b>File Uploaded Succefully</b> <br/>
+        <a href={`https://ipfs.io/ipfs/${this.state.ipfsHash}`}>
+        {`https://ipfs.io/ipfs/${this.state.ipfsHash}`}
+          </a></div>:null}
+        <h2>Blockchain Image/file Uploader</h2>
         <form onSubmit={this.onSubmit}>
           <input type='file' onChange={this.captureFile}/>
           <input type='submit' />
